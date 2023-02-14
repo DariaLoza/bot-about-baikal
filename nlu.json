@@ -1,90 +1,418 @@
 {
-    "project": {
-        "id": "zb-faq-cailapub-template_ru",
-        "name": "zb-faq-cailapub-template_ru",
-        "folder": "/"
+  "project" : {
+    "id" : "bot_dlya_vystavki-1000068402-qjg",
+    "name" : "bot_dlya_vystavki-1000068402-qjg",
+    "folder" : "/jaicp"
+  },
+  "settings" : {
+    "language" : "ru",
+    "spellingCorrection" : false,
+    "classificationAlgorithm" : "sts",
+    "timezone" : "Europe/Moscow",
+    "extendedSettings" : {
+      "tokenizerEngine" : "mystem",
+      "useShared" : false
     },
-    "settings": {
-        "language": "ru",
-        "spellingCorrection": false,
-        "classificationAlgorithm": "sts",
-        "timezone": "Europe/Moscow",
-        "extendedSettings": {
-      "tokenizerEngine": "mystem",
-            "useShared": false
-        }
+    "shared" : false
+  },
+  "intents" : [ {
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ",
+    "enabled" : true,
+    "shared" : false,
+    "classificationRules" : {
+      "refs" : [ ]
     },
-    "intents": [
-        {
-            "path": "/пока",
-            "description": null,
-            "answer": null,
-            "customData": null,
-            "enabled": true,
-            "phrases": [
-                {
-                    "text": "пока",
-                    "entities": null
-                }
-            ],
-            "patterns": null,
-            "slots": null
-        },
-        {
-            "path": "/привет",
-            "description": null,
-            "answer": null,
-            "customData": null,
-            "enabled": true,
-            "phrases": [
-                {
-                    "text": "привет",
-                    "entities": null
-                }
-            ],
-            "patterns": null,
-            "slots": null
-        }
-    ],
-    "entities": [],
-    "enabledSystemEntities": [
-        "duckling.number",
-        "duckling.time",
-        "duckling.duration",
-        "duckling.phone-number",
-        "duckling.email",
-        "duckling.url"
-    ],
-    "systemEntities": [
-        {
-            "name": "duckling.number",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.time",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.duration",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.phone-number",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.email",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.url",
-            "version": "v2",
-            "enabled": true
-        }
-    ]
+    "priority" : 0
+  }, {
+    "path" : "/пока",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "пока"
+    }, {
+      "text" : "до скорого"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/привет",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "привет"
+    }, {
+      "text" : "здарово"
+    }, {
+      "text" : "приветики"
+    }, {
+      "text" : "здравствуйте"
+    }, {
+      "text" : "добрый день! "
+    }, {
+      "text" : "добрый вечер! "
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Расскажи про телескоп",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Расскажи про телескоп"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Как спастись от медведей",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "медведь"
+    }, {
+      "text" : "мишка"
+    }, {
+      "text" : "Как спастись от медведей"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/ГЭС",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "ГЭС"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/дела",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "как дела?"
+    }, {
+      "text" : "как поживаешь?"
+    }, {
+      "text" : "как у тебя дела"
+    }, {
+      "text" : "как делишки"
+    }, {
+      "text" : "как ты"
+    }, {
+      "text" : "как настрой"
+    }, {
+      "text" : "как настроение"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/имя",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "как тебя зовут"
+    }, {
+      "text" : "кто ты"
+    }, {
+      "text" : "расскажи о себе "
+    }, {
+      "text" : "как твоё имя"
+    }, {
+      "text" : "твое имя"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/хорошо",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "хорошо"
+    }, {
+      "text" : "ок"
+    }, {
+      "text" : "окей"
+    }, {
+      "text" : "ладно"
+    }, {
+      "text" : "понятно"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/озеро",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "лед"
+    }, {
+      "text" : "байкал"
+    }, {
+      "text" : "озеро"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/степь",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "степи"
+    }, {
+      "text" : "тажеранские "
+    }, {
+      "text" : "степь"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/буряты",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "национальность"
+    }, {
+      "text" : "народы"
+    }, {
+      "text" : "бурят"
+    }, {
+      "text" : "бурятия"
+    }, {
+      "text" : "буряты"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Тунка",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Тункинский Национальный Парк"
+    }, {
+      "text" : "Тунка"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  } ],
+  "entities" : [ ],
+  "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ],
+  "spellerDictionary" : [ ],
+  "systemEntities" : [ {
+    "name" : "mystem.geo",
+    "enabled" : false
+  }, {
+    "name" : "mystem.persn",
+    "enabled" : false
+  }, {
+    "name" : "mystem.obsc",
+    "enabled" : false
+  }, {
+    "name" : "mystem.patrn",
+    "enabled" : false
+  }, {
+    "name" : "mystem.famn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.romn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.latn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.numb",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.intg",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.abbr",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.name",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.surn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.patr",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.geox",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.orgn",
+    "enabled" : false
+  }, {
+    "name" : "duckling.number",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.ordinal",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.amount-of-money",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.distance",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.time",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.date",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.time-of-day",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.duration",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.phone-number",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.email",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.url",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.interval",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "mlps-obscene.obscene",
+    "enabled" : false
+  }, {
+    "name" : "zb.datetime",
+    "enabled" : false
+  }, {
+    "name" : "zb.number",
+    "enabled" : false
+  } ],
+  "faq" : [ {
+    "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Расскажи про телескоп",
+    "replies" : [ {
+      "type" : "audio",
+      "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000068402/268151620/audio/5OBtPj8FEXb8zdek.mp3?channels={\"incompatible\":[\"ALEXA\",\"OUTGOING_CALLS\",\"GOOGLE_ASSISTANCE\"],\"compatible\":[\"VK\",\"TELEGRAM\",\"AIMYBOX\",\"ALISA\",\"WHATSAPP\",\"FACEBOOK\"]}",
+      "audioName" : "document_5424634099614624376(1)(1) (mp3cut.net).mp3",
+      "uploadDate" : 1676212254038,
+      "key" : "_x4phtg416"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Как спастись от медведей",
+    "replies" : [ {
+      "type" : "audio",
+      "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000068402/268151620/audio/sWljWElslfCcSpWS.mp3?channels={\"incompatible\":[\"ALEXA\",\"OUTGOING_CALLS\",\"GOOGLE_ASSISTANCE\"],\"compatible\":[\"VK\",\"TELEGRAM\",\"AIMYBOX\",\"ALISA\",\"WHATSAPP\",\"FACEBOOK\"]}",
+      "audioName" : "12 мая, 15 (mp3cut.net).mp3",
+      "uploadDate" : 1676210969137,
+      "key" : "_b4rncnhxw"
+    }, {
+      "type" : "text",
+      "text" : "Медведи встречаются на территории Байкала и опасны в период после спячки (апрель-май). ",
+      "markup" : "plain",
+      "key" : "_ffqd7tauw"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/ГЭС",
+    "replies" : [ {
+      "type" : "audio",
+      "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000068402/268151620/audio/K52JQRQFplTMfRXw.mp3?channels={\"incompatible\":[\"OUTGOING_CALLS\",\"GOOGLE_ASSISTANCE\",\"ALEXA\"],\"compatible\":[\"WHATSAPP\",\"FACEBOOK\",\"VK\",\"ALISA\",\"TELEGRAM\",\"AIMYBOX\"]}",
+      "audioName" : "IMG_8011 (mp3cut.net).mp3",
+      "uploadDate" : 1676389378324,
+      "key" : "_v0exv9dlv"
+    }, {
+      "type" : "text",
+      "text" : "Ирку́тская ГЭС — гидроэлектростанция на реке Ангаре в Свердловском округе города Иркутска. Является верхней по расположению и первой по времени строительства (возведена в 1950—1959 годах) ступенью Ангарского каскада, а также первой крупной гидроэлектростанцией в Сибири. На момент пуска в 1958 году последних гидроагрегатов Иркутская ГЭС была второй по мощности гидроэлектростанцией в СССР, уступая лишь Жигулёвской ГЭС (2300 МВт). Образованное сооружениями станции водохранилище включило в свой состав озеро Байкал, подняв его уровень примерно на метр. Собственником Иркутской ГЭС является ООО «ЕвроСибЭнерго-Гидрогенерация» (дочернее общество En+ Group).",
+      "markup" : "plain",
+      "key" : "_ywvcqv0ip"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/озеро",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Озеро тектонического происхождения в южной части Восточной Сибири, самое глубокое озеро на планете, крупнейший природный резервуар пресной воды и самое большое по площади пресноводное озеро Евразии.",
+      "markup" : "plain",
+      "key" : "_fw9gwgmfg"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/степь",
+    "replies" : [ {
+      "type" : "audio",
+      "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000068402/268151620/audio/n8kdW78H7JsrLkqG.mp3?channels={\"incompatible\":[\"OUTGOING_CALLS\",\"GOOGLE_ASSISTANCE\",\"ALEXA\"],\"compatible\":[\"WHATSAPP\",\"FACEBOOK\",\"VK\",\"ALISA\",\"TELEGRAM\",\"AIMYBOX\"]}",
+      "audioName" : "IMG_8636 (1) (mp3cut.net).mp3",
+      "uploadDate" : 1676388977189,
+      "key" : "_g2xkd4z0u"
+    }, {
+      "type" : "text",
+      "text" : "Тажеранские степи (или Тажераны) — это раскинувшиеся по соседству с Байкалом с одной стороны и Приморским хребтом с другой стороны степи, общей протяженностью более 35 км с севера на юг и шириной в 15 км. Этот сухой степной участок прекрасно просматривается с космических снимков.",
+      "markup" : "plain",
+      "key" : "_rhfioi0yo"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/буряты",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Буря́ты (самоназвание — буряад, буряад зон, буряадууд) — монголоязычный народ, говорящий на бурятском языке, исторически сформировавшийся в районе озера Байкал и объединённый общей культурой и историей. Считается, что предками бурят являются племена байырку и курыканы. Эти племена начали осваивать земли в районе озера Байкал начиная с VI века.",
+      "markup" : "plain",
+      "key" : "_fmiz5nqyj"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Тунка",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Тунки́нский национа́льный парк — национальный парк в Бурятии, образованный в целях охраны и организации рекреационного использования малонарушенных и разнообразных экосистем Тункинской котловины (от степей до горных тундр). На территории парка находится высочайшая вершина Саян — Мунку-Сардык.\n\nНациональный парк находится в ведении Министерства природных ресурсов и экологии Российской Федерации.",
+      "markup" : "plain",
+      "key" : "_avpvhja0v"
+    } ]
+  } ]
 }
