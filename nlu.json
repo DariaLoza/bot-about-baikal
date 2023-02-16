@@ -529,10 +529,10 @@
       "key" : "_fmiz5nqyj"
     }, {
       "type" : "audio",
-      "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000068402/268151620/audio/MI3m1ANWSWHBo1Pv.mp3?channels={\"incompatible\":[\"OUTGOING_CALLS\",\"ALEXA\",\"GOOGLE_ASSISTANCE\"],\"compatible\":[\"TELEGRAM\",\"WHATSAPP\",\"VK\",\"AIMYBOX\",\"ALISA\",\"FACEBOOK\"]}",
-      "audioName" : "буряты (audio-extractor.net).mp3",
-      "uploadDate" : 1676570856857,
-      "key" : "_5fujb6b4p"
+      "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000068402/268151620/audio/uViJjLbuWtWIGqOL.mp3?channels={\"incompatible\":[\"OUTGOING_CALLS\",\"ALEXA\",\"GOOGLE_ASSISTANCE\"],\"compatible\":[\"TELEGRAM\",\"WHATSAPP\",\"VK\",\"AIMYBOX\",\"ALISA\",\"FACEBOOK\"]}",
+      "audioName" : "буряты.mp3",
+      "uploadDate" : 1676575815229,
+      "key" : "_wipczwtsw"
     } ]
   }, {
     "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Тунка",
