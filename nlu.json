@@ -16,14 +16,6 @@
     "shared" : false
   },
   "intents" : [ {
-    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ",
-    "enabled" : true,
-    "shared" : false,
-    "classificationRules" : {
-      "refs" : [ ]
-    },
-    "priority" : 0
-  }, {
     "path" : "/пока",
     "enabled" : true,
     "shared" : false,
@@ -60,7 +52,7 @@
     "patterns" : [ ],
     "priority" : 0
   }, {
-    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Расскажи про телескоп",
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/телескоп",
     "enabled" : true,
     "shared" : false,
     "phrases" : [ {
@@ -70,7 +62,7 @@
     }, {
       "text" : "нейтрино"
     }, {
-      "text" : "Расскажи про телескоп"
+      "text" : "телескоп"
     } ],
     "classificationRules" : {
       "refs" : [ ]
@@ -409,6 +401,22 @@
     },
     "patterns" : [ ],
     "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/выставка",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "экспозиция"
+    }, {
+      "text" : "фотовыставка"
+    }, {
+      "text" : "выставка"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
   } ],
   "entities" : [ ],
   "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ],
@@ -517,10 +525,7 @@
     "enabled" : false
   } ],
   "faq" : [ {
-    "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ",
-    "replies" : [ ]
-  }, {
-    "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Расскажи про телескоп",
+    "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/телескоп",
     "replies" : [ {
       "type" : "audio",
       "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000068402/268151620/audio/5OBtPj8FEXb8zdek.mp3?channels={\"incompatible\":[\"ALEXA\",\"OUTGOING_CALLS\",\"GOOGLE_ASSISTANCE\"],\"compatible\":[\"VK\",\"TELEGRAM\",\"AIMYBOX\",\"ALISA\",\"WHATSAPP\",\"FACEBOOK\"]}",
@@ -690,6 +695,14 @@
       "text" : "Особенность региона – высокая сейсмическая активность. Колебания земной коры здесь происходят регулярно, однако сила большинства землетрясений не превышает одного-двух баллов. Но в прошлом случались и мощные. Например, в 1862 году, когда десятибалльная «встряска» привела к уходу под воду целого участка суши в северной части дельты Селенги, одного из многочисленных притоков Байкала. Его площадь составляла 200 км, на этой территории проживало около 1500 человек. Позже тут образовался залив, который так и называется – Провал. Сильные землетрясения происходили также в 1903, 1950, 1957 и 1959 годах. Эпицентр последнего, 9-балльного, находился на дне озера в районе сельского поселения Сухая. Толчки тогда ощущались также в Иркутске и Улан-Удэ – порядка 5-6 баллов. В наше время регион трясло в 2008 и 2010 годах: сила толчков составила соответственно 9 и 6,1 балла.",
       "markup" : "plain",
       "key" : "_ckpprfhgi"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/выставка",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Выставка проходит в Design District DAA на 2 этаже, с 5 марта по 5 мая",
+      "markup" : "plain",
+      "key" : "_rpmggyrjd"
     } ]
   } ]
 }
