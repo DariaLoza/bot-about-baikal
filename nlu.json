@@ -354,13 +354,17 @@
     "patterns" : [ ],
     "priority" : 0
   }, {
-    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/костеломы ",
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/костоломы ",
     "enabled" : true,
     "shared" : false,
     "phrases" : [ {
+      "text" : "кости"
+    }, {
+      "text" : "костеломы"
+    }, {
       "text" : "спорт"
     }, {
-      "text" : "костеломы "
+      "text" : "костоломы "
     } ],
     "classificationRules" : {
       "refs" : [ ]
@@ -711,7 +715,7 @@
       "key" : "_ugghs3qul"
     } ]
   }, {
-    "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/костеломы ",
+    "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/костоломы ",
     "replies" : [ {
       "type" : "audio",
       "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000068402/268151620/audio/CVY7cmGMHZbctAg5.mp3?channels={\"incompatible\":[\"OUTGOING_CALLS\",\"ALEXA\",\"GOOGLE_ASSISTANCE\"],\"compatible\":[\"TELEGRAM\",\"WHATSAPP\",\"VK\",\"AIMYBOX\",\"ALISA\",\"FACEBOOK\"]}",
