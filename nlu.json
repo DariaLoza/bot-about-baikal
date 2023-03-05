@@ -542,6 +542,12 @@
     "enabled" : true,
     "shared" : false,
     "phrases" : [ {
+      "text" : "девятая"
+    }, {
+      "text" : "девять"
+    }, {
+      "text" : "9"
+    }, {
       "text" : "храм"
     }, {
       "text" : "Дацан"
