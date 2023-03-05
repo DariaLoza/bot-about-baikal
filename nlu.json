@@ -16,6 +16,34 @@
     "shared" : false
   },
   "intents" : [ {
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/глухарь",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "самец"
+    }, {
+      "text" : "токовые песни"
+    }, {
+      "text" : "ток"
+    }, {
+      "text" : "токование"
+    }, {
+      "text" : "восьмая"
+    }, {
+      "text" : "восемь"
+    }, {
+      "text" : "8"
+    }, {
+      "text" : "птица"
+    }, {
+      "text" : "глухарь"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
     "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/свет",
     "enabled" : true,
     "shared" : false,
@@ -659,6 +687,14 @@
     "enabled" : false
   } ],
   "faq" : [ {
+    "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/глухарь",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Во время токования (поведение самцов в брачный период) они издают долгий гортанный звук и во время этого пения дезориентированы в пространстве, поэтому к ним можно близко подойти, чем и пользуются охотники. \nГлухари начинают петь на деревьях и с шумом перемещаются на землю, где по подтаивающему снегу самцы бродят и «чертят» распущенными крыльями, исполняют фрагменты токовых песен.",
+      "markup" : "html",
+      "key" : "_8s5u4qdfs"
+    } ]
+  }, {
     "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/свет",
     "replies" : [ {
       "type" : "text",
