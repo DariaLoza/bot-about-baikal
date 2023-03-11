@@ -146,6 +146,8 @@
     "enabled" : true,
     "shared" : false,
     "phrases" : [ {
+      "text" : "медведи"
+    }, {
       "text" : "кбжд"
     }, {
       "text" : "жд"
