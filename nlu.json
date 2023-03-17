@@ -75,6 +75,8 @@
       "text" : "знаешь"
     }, {
       "text" : "способен"
+    }, {
+      "text" : "о чем"
     } ],
     "classificationRules" : {
       "refs" : [ ]
@@ -216,15 +218,19 @@
     "enabled" : true,
     "shared" : false,
     "phrases" : [ {
-      "text" : "как тебя зовут"
-    }, {
       "text" : "кто ты"
     }, {
-      "text" : "расскажи о себе "
+      "text" : "твое имя"
     }, {
-      "text" : "как твоё имя"
+      "text" : "себе"
+    }, {
+      "text" : "твоё имя"
     }, {
       "text" : "твое имя"
+    }, {
+      "text" : "тебя зовут"
+    }, {
+      "text" : "зовут"
     } ],
     "classificationRules" : {
       "refs" : [ ]
@@ -522,6 +528,10 @@
     "enabled" : true,
     "shared" : false,
     "phrases" : [ {
+      "text" : "фотографии"
+    }, {
+      "text" : "посмотреть фотографии"
+    }, {
       "text" : "фотопланер"
     }, {
       "text" : "фотопланэр"
