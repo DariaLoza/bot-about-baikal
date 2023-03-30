@@ -13,7 +13,13 @@
       "tokenizerEngine" : "mystem",
       "useShared" : false
     },
-    "shared" : false
+    "shared" : false,
+    "validation" : {
+      "phraseValidationEnabled" : false,
+      "answerValidationEnabled" : false,
+      "phraseValidationThreshold" : 0.5,
+      "answerValidationThreshold" : 0.8
+    }
   },
   "intents" : [ {
     "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/глухарь",
@@ -91,6 +97,12 @@
       "text" : "пока"
     }, {
       "text" : "до скорого"
+    }, {
+      "text" : "стоп"
+    }, {
+      "text" : "stop"
+    }, {
+      "text" : "/stop"
     } ],
     "classificationRules" : {
       "refs" : [ ]
@@ -926,5 +938,6 @@
       "markup" : "plain",
       "key" : "_hbfmaajos"
     } ]
-  } ]
+  } ],
+  "skills" : [ ]
 }
